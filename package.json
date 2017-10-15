@@ -1,0 +1,33 @@
+{
+  "name": "varnalab-events",
+  "version": "1.0.0",
+  "description": "Sync Facebook Group and Page Feed Events",
+  "private": true,
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "https://github.com/varnalab/varnalab-events",
+  "author": "Simeon Velichkov <simeonvelichkov@gmail.com> (https://simov.github.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/varnalab/varnalab-events.git"
+  },
+  "dependencies": {
+    "@request/client": "^0.1.0",
+    "minimist": "^1.2.0",
+    "purest": "^3.1.0",
+    "facebook-sync": "git+https://github.com/simov/facebook-sync.git#HEAD"
+  },
+  "devDependencies": {
+    "@request/log": "^0.1.0"
+  },
+  "bin": {
+    "varnalab-events": "./bin/index.js"
+  },
+  "main": "./lib/",
+  "files": [],
+  "scripts": {},
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
+  }
+}
