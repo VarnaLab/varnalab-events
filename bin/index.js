@@ -58,7 +58,7 @@ var events = require('../lib/events')(args)
 
 
 sync[argv.sync]()
-  .then(db.update)
+  .then(db.update[argv.sync])
   .then(events.sort)
   .then(db.write)
   .catch((err) => console.error(err))
